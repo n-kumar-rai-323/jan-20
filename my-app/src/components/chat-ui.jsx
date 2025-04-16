@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 // Sample data that the ChatUi component expects
@@ -43,7 +44,7 @@ const ChatUi = ({ userUserDetails }) => {
       {/* Chat Header */}
       <div className="bg-green-500 text-white p-4 flex items-center shadow-md">
         <div className="relative w-10 h-10 rounded-full overflow-hidden mr-3">
-          <img
+          <Image
             src={userUserDetails.profilePicture}
             alt={userUserDetails.firstName}
             layout="fill"
